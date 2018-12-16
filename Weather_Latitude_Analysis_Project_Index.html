@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Insert title here -->
+
+    <title>Weather-Latitude Analysis</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-header">
+            <a class="nav-link" href="Weather_Latitude_Analysis_Project.html">
+                <h1><span class="nav-color">Weather-Latitude Analysis Project Summary</span></h1>
+            </a>
+        </div>
+
+        <div class="nav navbar-nav navbar-right">
+            <div class="dropdown">
+                <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="Temperature_pg.html">Temperature</a></li>
+                            <li><a href="Humidity_pg.html">Humidity</a></li>
+                            <li><a href="Cloudiness_pg.html">Cloudiness</a></li>
+                            <li><a href="WindSpeed_pg.html">Wind Speed</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="Other_Comparisons_pg.html">Other Plots</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comparisons_pg.html"> Comparisons</a></li>
+                    <li><a href="Data_pg.html"> Data</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Body: Twitter bootstrap -->
+
+    <div style="background-color:rgb(40, 158, 129);">
+
+        <div class='row'>
+
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+
+                </br>
+
+                </br>
+
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+
+    </div> <!-- ends background div-->
+
+    <!-- Header -->
+
+    <div class='container-fluid'>
+
+        <div class='row align-items-center'>
+
+            <div class="col-md-4">
+
+                </br>
+
+                </br>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- main content -->
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <figure>
+
+                    <img src="Resources\Latitude_Longitude_Plot_Points.png" alt="City Latitude and Longitude Plot"
+                        height="450" width="600">
+
+                </figure>
+
+            </div>
+
+            <!-- summary paragraph -->
+
+            <div class="col-lg-6">
+
+                <h3><span class="nav-color">Project Overview</span></h3>
+
+                <ul style="list-style-type:circle">
+                    <li>The Weather-Latitude Analysis project examined weather activity to determine
+                        if weather conditions were similar or dissimilar at latitudes nearer and further from
+                        the equator.</li>
+                        <p></p>
+                    <li>Python's citypy library was used to create a random list of more than 500 latitude/longitude points
+                        and identify the nearest city. Python requests to OpenWeatherMap.org's API were used to
+                        get weather data for each of the identified cities. Python Pandas was used during the data analysis
+                        phase. Matplotlib.pyplot was used to plot the weather data for each city (max temperature, humidity,
+                        cloudiness, and wind speed) against each city's latitude.</li>
+                        <p></p>
+                    <li>This site contains those individual data visualizations along with descriptions, a comparisons page,
+                        and a data page with a responsive table containing the data used in the visualizations.</li>
+                        <p></p>
+                    <li>Because the data set includes only a single snapshot of weather measurements from each location,
+                        it is impossible to determine if the data indicate trends, or if the data represents normal
+                        weather. An analysis of data that includes the same measurements from the same locations during a longer
+                        period of time would allow a better understanding of trends and to determine the normality of the current
+                        data. Because the data set is comprised of a random selection of cities, it is possible that some areas
+                        of the globe are not fully represented – and some areas are over-represented. The use of a data set that
+                        is truly representative of all global locations would allow for better analysis.</li>
+
+                  </ul>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Visualizations -->
+
+    <!-- Header -->
+
+    <div id="bottom_visual" class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <br> <!-- line break to push header down -->
+
+            </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+    <br>
+
+        <!-- Header content for visualization section -->
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-12">
+
+                <h3 id="bot_header">Visualizations</h3>
+
+            </div>
+
+        </div>
+
+    <br>
+
+        <div class="row align-items: center">
+
+            <div class="col-lg-3">
+
+                <a href="Temperature_pg.html">
+
+                    <img src="Resources\Latitude_and_Temperature.png" alt="Latitude and Temperature" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Humidity_pg.html">
+
+                    <img src="Resources\Latitude_and_Humidity.png" alt="Latitude and Humidity" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Cloudiness_pg.html">
+
+                    <img src="Resources\Latitude_and_Cloudiness.png" alt="Latitude and Cloudiness" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Windspeed_pg.html">
+
+                    <img src="Resources\Latitude_and_Windspeed.png" alt="Latitude and Windspeed" height="225" width="300">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        </br>
+
+        </br>
+
+        <p>
+
+            For additional information:&emsp;
+
+            <a target="_blank" href="https://sstevener.github.io/Weather-Latitude-Analysis-Project-Summary-Web-Site/Weather_Latitude_Analysis_Project_Index.html">
+
+                Web page GitHub link
+
+            </a> &emsp;
+
+            <a target="_blank" href="https://github.com/sstevener/WeatherPy---Python-APIs-Homework">
+
+                Project GitHub link
+
+            </a> &emsp;
+
+            <a target="_blank" href="https://github.com/sstevener">See more of my projects at GitHub
+
+            </a> &emsp;
+
+            <a href="mailto:sstevener22476@gmail.com">Contact: sstevener22476@gmail.com</a>
+
+        </p>
+
+
+        <hr>
+
+    </div>
+
+</body>
+
+</html>
