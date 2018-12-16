@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Insert title here -->
+
+    <title>Other Comparisons</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-header">
+            <a class="nav-link" href="Weather_Latitude_Analysis_Project.html">
+                <h1><span class="nav-color">Weather-Latitude Analysis Project Summary</span></h1>
+            </a>
+        </div>
+
+        <div class="nav navbar-nav navbar-right">
+            <div class="dropdown">
+                <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="Temperature_pg.html">Temperature</a></li>
+                            <li><a href="Humidity_pg.html">Humidity</a></li>
+                            <li><a href="Cloudiness_pg.html">Cloudiness</a></li>
+                            <li><a href="WindSpeed_pg.html">Wind Speed</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="Other_Comparisons_pg.html">Other Plots</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comparisons_pg.html"> Comparisons</a></li>
+                    <li><a href="Data_pg.html"> Data</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Content -->
+
+    <div style="background-color:rgb(40, 158, 129);">
+
+        <div class='row'>
+
+            <div class="col-md-12">
+
+                </br> <!-- line breaks for spacing between navbar and header -->
+
+                </br>
+
+            </div>
+
+        </div>
+
+    </div> <!-- ends background color -->
+
+
+
+    <!-- Header -->
+
+    <div class="container-fluid">
+
+        <div class='row align-items-center'>
+
+            <div class="col-lg-4">
+
+                </br>
+
+                </br>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h1 class="intro">Other Weather Comparisons</h1>
+
+
+            </div>
+
+            <div class="col-lg-2">
+
+
+            </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+
+        <div class="row">
+
+            <div id="comp_note" class="col-md-12">
+
+                <h3><span class="nav-color">Observations</span></h3>
+
+                <ul style="list-style-type:circle">
+                    <li>There seems to be a slight inverse relationship between Windspeed and Temperature,
+                        where higher temperatures measurements tend to be associated with lower windspeed measurements.</li>
+                    <p></p>
+                    <li>A similar slight inverse relationship can also been seen between Windspeed and Humidity,
+                        where higher humidity measurements tend to be associated with lower windspeed measurements.</li>
+                    <p></p>
+                    <li>There also seems to be a weak relationship between Humidity and Temperature,
+                        where higher tempetures are associated with higher humidity levels.</li>
+                    <p></p>
+                    <li>There does not seem to be a strong relationship between any of the following:
+                        Cloudiness and Temperature, Cloudiness and Windspeed, or Cloudiness and Humidity.</li>
+
+                </ul>
+
+                <br>
+                <br>
+            </div>
+
+
+            <div class="container">
+                <!--Row with two equal columns-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><Strong>Wind Speed and Temperature</Strong></h3>
+
+                        <img src="Resources\Windspeed_and_Temperature.png" alt="Wind Speed and Temperature" height="450"
+                            width="600">
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h3><Strong>Wind Speed and Humidity</Strong></h3>
+
+                        <img src="Resources\Windspeed_and_Humidity.png" alt="Wind Speed and Humidity" height="450"
+                            width="600">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container">
+                <!--Row with two equal columns-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><Strong>Humidity and Temperature</Strong></h3>
+
+                        <img src="Resources\Humidity_and_Temperature.png" alt="Humidity and Temperature" height="450"
+                            width="600">
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h3><Strong>Cloudiness and Temperature</Strong></h3>
+
+                        <img src="Resources\Cloudiness_and_Temperature.png" alt="Cloudiness and Temperature" height="450"
+                            width="600">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <!--Row with two equal columns-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><Strong>Cloudiness and Wind Speed</Strong></h3>
+
+                        <img src="Resources\Cloudiness_and_Windspeed.png" alt="Cloudiness and Wind Speed" height="450"
+                            width="600">
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h3><strong>Cloudiness and Humidity</strong></h3>
+
+                        <img src="Resources\Cloudiness_and_Humidity.png" alt="Cloudiness and Humidity" height="450"
+                            width="600">
+
+                    </div>
+                </div>
+            </div>
+
+            </br>
+            </br>
+
+
+
+            <!-- reference to github and my github page -->
+            </br>
+
+            </br>
+
+            <p>
+
+                For additional information:&emsp;
+
+                <a target="_blank" href="https://sstevener.github.io/Weather-Latitude-Analysis-Project-Summary-Web-Site/Weather_Latitude_Analysis_Project_Index.html">
+
+                    Web page GitHub link
+
+                </a> &emsp;
+
+                <a target="_blank" href="https://github.com/sstevener/WeatherPy---Python-APIs-Homework">
+
+                    Project GitHub link
+
+                </a> &emsp;
+
+                <a target="_blank" href="https://github.com/sstevener">See more of my projects at GitHub
+
+                </a> &emsp;
+
+                <a href="mailto:sstevener22476@gmail.com">Contact: sstevener22476@gmail.com</a>
+
+            </p>
+            <hr>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
